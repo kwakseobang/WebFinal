@@ -85,17 +85,17 @@ button {
 button:hover {
     background-color: #1F2326;;
 }
-/* banner */
-.banner {
- background-color: white;
-}
-#quiz-form {
-    
+
+.main-title p {
+    text-align: center;
+    margin: 2%;
+    font-weight: bold;
+    font-size: 5vw;
 }
 
 /* 마우스 올릴 시 확대 */
 #quiz-form .question .label {
-    width: 8vw;
+    width: 6vw;
     height: auto;
     transition: transform 0.3s ease;
 

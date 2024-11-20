@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 5%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container p {
+    font-weight: bold;
+    font-size: 2vw;
+}
+.container h1 {
+    font-weight: bold;
+    font-size: 2vw;
+}
+/* 네비게이션 바 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.5vw;
+    color: #555;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1F2326;;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1F2326;;
+}
+
+
+/* 마우스 올릴 시 확대 */
+#quiz-form .question .label {
+    width: 8vw;
+    height: auto;
+    transition: transform 0.3s ease;
+
+
+}
+
+#quiz-form .question:hover {
+    transform: scale(2.0);
+    /* 1.5諛곕줈 �뺣� */
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색깔 순서 맞추기 게임</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>색깔 순서 맞추기 게임</h1>
+        <p>주어진 색깔 순서를 기억하고 맞추세요!</p>
+        <div id="color-display" class="color-display"></div>
+        <div id="game-controls" class="game-controls">
+            <button id="start-button" onclick="startGame()">게임 시작</button>
+            <div id="color-picker" class="color-picker" style="display: none;">
+                <button class="color-button" onclick="chooseColor('red')">빨간색</button>
+                <button class="color-button" onclick="chooseColor('green')">초록색</button>
+                <button class="color-button" onclick="chooseColor('blue')">파란색</button>
+                <button class="color-button" onclick="chooseColor('yellow')">노란색</button>
+                <button class="color-button" onclick="chooseColor('orange')">주황색</button>
+            </div>
+            <button id="submit-button" onclick="checkAnswer()" style="display: none;">제출</button>
+        </div>
+        <div id="game-message" class="game-message"></div>
+    </div>
+
+    <script src="/js/color.js"></script>
+</body>
+</html>

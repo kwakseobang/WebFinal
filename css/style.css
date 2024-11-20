@@ -1,0 +1,97 @@
+header {
+    background-color: #1F2326;
+    padding: 0;
+    margin: 0;
+}
+/* 네비게이션 바 스타일 */
+nav {
+    border-bottom: 1px solid #ccc; /* 본문과의 구분을 위한 하단 구분선 */
+
+    margin: 0;
+}
+#nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*내용이 넘치면 숨김*/
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: space-between; /* 왼쪽, 오른쪽 항목 배치 */
+}
+
+#nav-menu li {
+    
+    display: inline-block;
+}
+
+#nav-menu li a {
+    display: block; /* 링크를 블록으로 */
+    text-align: center; /*텍스트는 블록의 중심*/
+    padding: 14px 16px;
+    text-decoration: none; /*링크의 밑줄 제거*/
+    color: white;
+    cursor: pointer;
+}
+
+#nav-menu li a:hover {
+   
+    color: #6C757D;
+}
+
+/* 드롭다운 */
+#dropdown-content {
+    display: none;
+}
+/* 사이트 이름은 왼쪽에 위치 */
+#site-name {
+    flex-grow: 1; /* 왼쪽에 배치된 사이트 이름이 여유 공간을 차지하도록 */
+    float: left; /* 왼쪽 정렬 */
+    /* margin-right: 60%; */
+}
+
+/* 오른쪽 메뉴 항목 */
+#nav-menu li:not(#site-name) {
+    float: right; /* 오른쪽 정렬 */
+}
+/* 햄버거 메뉴 스타일 설정 */
+#hamburger-menu {
+    display: none; /* 기본 상태에서는 햄버거 메뉴 숨김 */
+    cursor: pointer; /* 마우스 오버 시 포인터 모양 변경 */
+    float: right;
+}
+
+/* 햄버거 메뉴 아이콘 스타일 (세 개의 가로줄) */
+#hamburger-menu div {
+    width: 25px; /* 가로줄 너비 */
+    height: 3px; /* 가로줄 높이 */
+    background-color: rgb(65, 144, 255); 
+    margin: 6px 0; /* 상하 마진 설정 (줄 간격) */
+}
+
+/* 미디어 쿼리를 사용한 반응형 디자인 설정 */
+@media screen and (max-width: 600px) {
+    #nav-menu {
+        display: none; /* 화면 너비가 600px 이하일 때 네비게이션 메뉴 숨김 */
+        width: 100%; /* 메뉴바 전체 너비 */
+
+    }
+    #nav-menu li{
+        float: none; /* 세로 정렬을 위해 float 제거 */
+        width: 100%; /* 각 항목 전체 너비 */
+    }
+    #nav-menu li a {
+        text-align: right; /* 텍스트 오른쪽 정렬 */
+    }
+    #hamburger-menu {
+        display: block; /* 화면 너비가 600px 이하일 때 햄버거 메뉴 표시 */
+    }
+
+     /* 햄버거 메뉴에서 '사이트 이름' 항목 숨기기 */
+     #nav-menu #site-name {
+        display: none; /* 화면 너비가 600px 이하일 때 사이트 이름 숨김 */
+    }
+  /* 화면 너비가 600px 이하일 때 네비게이션 바의 하단 구분선 숨기기 */
+  nav {
+    border-bottom: white; /* 네비게이션 바의 밑줄 숨김 */
+}
+}

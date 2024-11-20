@@ -1,0 +1,7 @@
+#color-display {
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    align-items: center; /* 수직으로 중앙 정렬 */
+    margin: 10px auto; /* 상하 중앙 정렬 */
+}

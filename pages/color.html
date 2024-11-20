@@ -1,31 +1,80 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>색깔 순서 맞추기 게임</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>메인 페이지</title>
+    <link rel="stylesheet" href="/css/main.css"> <!-- 외부 CSS 파일 연결 -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/color.css" rel="stylesheet">
 </head>
+
 <body>
 
-    <div class="game-container">
-        <h1>색깔 순서 맞추기 게임</h1>
-        <p>주어진 색깔 순서를 기억하고 맞추세요!</p>
-        <div id="color-display" class="color-display"></div>
-        <div id="game-controls" class="game-controls">
-            <button id="start-button" onclick="startGame()">게임 시작</button>
-            <div id="color-picker" class="color-picker" style="display: none;">
-                <button class="color-button" onclick="chooseColor('red')">빨간색</button>
-                <button class="color-button" onclick="chooseColor('green')">초록색</button>
-                <button class="color-button" onclick="chooseColor('blue')">파란색</button>
-                <button class="color-button" onclick="chooseColor('yellow')">노란색</button>
-                <button class="color-button" onclick="chooseColor('orange')">주황색</button>
-            </div>
-            <button id="submit-button" onclick="checkAnswer()" style="display: none;">제출</button>
-        </div>
-        <div id="game-message" class="game-message"></div>
+
+    <!-- 상단 네비게이션 바 -->
+    <div id="header">
+        <header>
+            <nav>
+                <div id="hamburger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-menu">
+                    <li id="site-name"><a href="#">사이트 이름</a></li>
+                    <li><a href="./self_test.html">자가 진단</a></li>
+                    <li><a href="#contact">정보</a></li>
+                    <li><a href="./work_out.html">운동</a></li>
+                    <li>
+                        <a href="#faq">게임</a>
+                    </li>
+                    <li><a href="./main.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
 
-    <script src="/js/color.js"></script>
+    <!-- 메인 콘텐츠 -->
+    <div class="main-title">
+        <p>title1<br>
+            title2<br>
+            title3
+        </p>
+    </div>
+    <div class="game-container">
+        <h1>색깔 순서 맞추기 게임</h1>
+        <p>주어진 색깔 순서를 기억하고 맞추세요! <button id="start-button" onclick="startGame()">게임 시작</button></p>
+    
+        <div id="color-display"></div>
+        <div id="color-picker">
+            <!-- 색깔 선택 버튼 -->
+            <button style="background-color: red;" onclick="chooseColor('red')">빨강</button>
+            <button style="background-color: orange;" onclick="chooseColor('orange')">주황</button>
+            <button style="background-color: yellow;" onclick="chooseColor('yellow')">노랑</button>
+            <button style="background-color: green;" onclick="chooseColor('green')">초록</button>
+            <button style="background-color: blue;" onclick="chooseColor('blue')">파랑</button>
+            <button style="background-color: indigo;" onclick="chooseColor('indigo')">남색</button>
+            <button style="background-color: violet;" onclick="chooseColor('violet')">보라</button>
+           
+        </div>
+     
+        <button id="submit-button" onclick="checkAnswer()" style="display: none;">정답 제출</button>
+        <p id="game-message"></p>
+
+        <script src="/js/color.js"></script>
 </body>
+
+<!-- 하단 푸터 -->
+<footer class="bg-light py-4 mt-5">
+    <div class="container text-center">
+        <p class="mb-0">© 2024 웹사이트 이름. 모든 권리 보유.</p>
+    </div>
+</footer>
+
+<script src="/js/include-header.js"></script>
+
+</body>
+
 </html>

@@ -1,15 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
 
 .container {
+    background-color: #F8F9FA;
+}
+.container .self {
     width: 80%;
     max-width: 600px;
     margin: 50px auto;
-    background-color: #fff;
+    background-color: white;
     padding: 5%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -59,7 +62,7 @@ h1 {
 }
 
 label {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: #555;
 }
 
@@ -82,7 +85,13 @@ button {
 button:hover {
     background-color: #1F2326;;
 }
-
+/* banner */
+.banner {
+ background-color: white;
+}
+#quiz-form {
+    
+}
 
 /* 마우스 올릴 시 확대 */
 #quiz-form .question .label {
